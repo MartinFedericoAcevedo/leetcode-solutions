@@ -1,6 +1,8 @@
-package _8_merged_sorted_array
+package main
 
-import "log"
+import (
+	"log"
+)
 
 func merge(nums1 []int, m int, nums2 []int, n int) {
 	if n == 0 {

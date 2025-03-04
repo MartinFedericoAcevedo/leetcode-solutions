@@ -1,4 +1,4 @@
-package _8_merged_sorted_array
+package main
 
 import (
 	"testing"

@@ -5,3 +5,21 @@ repos:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-yaml
+
+  - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+    rev: v2.14.0
+    hooks:
+      - id: pretty-format-golang
+        args:
+          - --autofix
+#  - repo: https://github.com/golangci/golangci-lint
+#    rev: v1.62.2
+#    hooks:
+#      - id: golangci-lint
+#        entry: golangci-lint run
+#        args:
+#          - --max-issues-per-linter=0
+#          - --max-same-issues=0
+#          - --config=.code_quality/.golangci.yml
+#          - --new-from-rev=HEAD~1
+#        pass_filenames: false  # Evita que intente analizar archivos en la raíz
